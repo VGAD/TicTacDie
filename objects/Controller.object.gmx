@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.sling = true;
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -51,7 +50,7 @@
             <string>maxPower = 1000;
 powerBarMaxWidth = 100;
 
-if (global.sling &amp;&amp; mouse_check_button(mb_left)) {
+if (mouse_check_button(mb_left)) {
     if (mouseAlreadyPressed == false) {
         startX = Throwable.sprite_width/2 + Throwable.x;
         startY = Throwable.sprite_height/2 + Throwable.y;
@@ -68,7 +67,7 @@ if (global.sling &amp;&amp; mouse_check_button(mb_left)) {
         
         draw_line_width_color(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/maxPower), 
             merge_color(c_blue, c_red, lineLength/maxPower), 
-            merge_color(c_blue, c_red, lineLength/maxPower)
+            merge_color(c_red, c_blue, lineLength/maxPower)
         );
         
         // Draw white arrow
