@@ -115,8 +115,8 @@ else if (vspeed &lt; 0)
           <argument>
             <kind>1</kind>
             <string>if(global.sling = true &amp;&amp; clicked = true){
-    x=mouse_x;
-    y=mouse_y;
+    //x=mouse_x;
+    //y=mouse_y;
 }
 </string>
           </argument>
