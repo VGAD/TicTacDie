@@ -25,16 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_check_button(mb_left)) {
+            <string>maxPower = 1000;
+
+if (mouse_check_button(mb_left)) {
     if (mouseAlreadyPressed == false) {
         startX = Throwable.sprite_width/2 + Throwable.x;
         startY = Throwable.sprite_height/2 + Throwable.y;
         mouseAlreadyPressed = true;
-        show_debug_message("press");
     }
     else if (mouseAlreadyPressed == true) {
+        lineLength = (sqrt(power(mouse_x-startX, 2) + power(mouse_y-startY,2)));
+        if (lineLength &gt; maxPower){
+            lineLength = maxPower;
+        }
+        draw_set_color(merge_color(c_red, c_blue, lineLength/maxPower));
         draw_arrow(mouse_x, mouse_y, startX, startY, 64);
-        show_debug_message("drawing");
+        
+        show_debug_message(lineLength );
     }
 }
 else {
