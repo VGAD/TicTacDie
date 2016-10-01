@@ -92,8 +92,8 @@ else if (vspeed &lt; 0)
             <string>if(global.sling=true &amp;&amp; clicked = true){
     clicked = false;
     global.sling = false;
-    hspeed= ((mouse_x - x)* 0.15)/mass
-    vspeed= ((mouse_y - y)* 0.15)/mass
+    hspeed= ((mouse_x - x)* global.velocityScale)/mass
+    vspeed= ((mouse_y - y)* global.velocityScale)/mass
 }
 </string>
           </argument>
