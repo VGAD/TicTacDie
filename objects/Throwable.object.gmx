@@ -55,6 +55,13 @@ else if (hspeed &gt; 0)
   hspeed -= global.hfriction;
 else if (hspeed &lt; 0)
   hspeed += global.hfriction;
+  
+if (abs(vspeed) &lt; global.vfriction)
+  vspeed = 0;
+else if (vspeed &gt; 0)
+  vspeed -= global.vfriction;
+else if (vspeed &lt; 0)
+  vspeed += global.vfriction;
 </string>
           </argument>
         </arguments>
