@@ -7,6 +7,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\X</sprite>
+    <sprite>sprites\board</sprite>
+    <sprite>sprites\sprite2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BadBackground</background>
@@ -15,6 +17,7 @@
   <objects name="objects">
     <object>objects\Throwable</object>
     <object>objects\Controller</object>
+    <object>objects\BoardObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
