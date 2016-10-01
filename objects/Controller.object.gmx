@@ -27,16 +27,13 @@
             <kind>1</kind>
             <string>if (mouse_check_button(mb_left)) {
     if (mouseAlreadyPressed == false) {
-        //startX = mouse_x;
-        //startY = mouse_y;
         startX = Throwable.sprite_width/2 + Throwable.x;
         startY = Throwable.sprite_height/2 + Throwable.y;
         mouseAlreadyPressed = true;
         show_debug_message("press");
-        show_debug_message(Throwable.x);
     }
     else if (mouseAlreadyPressed == true) {
-        draw_arrow(startX, startY, mouse_x, mouse_y, 64);
+        draw_arrow(mouse_x, mouse_y, startX, startY, 64);
         show_debug_message("drawing");
     }
 }
