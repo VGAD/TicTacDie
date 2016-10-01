@@ -87,6 +87,7 @@ if (global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; Throwable.cli
             lineLength = maxPower;
         }
        
+        draw_set_alpha(0.5);
         
         draw_line_width_color(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/maxPower), 
             merge_color(c_blue, c_red, lineLength/maxPower), 
@@ -95,8 +96,9 @@ if (global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; Throwable.cli
         
         // Draw white arrow
         draw_set_color(c_white);
-        draw_arrow(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/maxPower) * 0.7);
+        draw_arrow( startX, startY, mouse_x, mouse_y, powerBarMaxWidth * (lineLength/maxPower) * 0.7);
         
+        draw_set_alpha(1);
         
         show_debug_message(lineDirection );
     }
