@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>maxPower = 1000;
+powerBarMaxWidth = 100;
 
 if (mouse_check_button(mb_left)) {
     if (mouseAlreadyPressed == false) {
@@ -34,14 +35,25 @@ if (mouse_check_button(mb_left)) {
         mouseAlreadyPressed = true;
     }
     else if (mouseAlreadyPressed == true) {
-        lineLength = (sqrt(power(mouse_x-startX, 2) + power(mouse_y-startY,2)));
+        lineLength = point_distance(mouse_x, mouse_y, startX, startY,);
+        lineDirection = point_direction(mouse_x, mouse_y, startX, startY,);
+        
         if (lineLength &gt; maxPower){
             lineLength = maxPower;
         }
-        draw_set_color(merge_color(c_red, c_blue, lineLength/maxPower));
-        draw_arrow(mouse_x, mouse_y, startX, startY, 64);
+       
         
-        show_debug_message(lineLength );
+        draw_line_width_color(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/maxPower), 
+            merge_color(c_blue, c_red, lineLength/maxPower), 
+            merge_color(c_red, c_blue, lineLength/maxPower)
+        );
+        
+        // Draw white arrow
+        draw_set_color(c_white);
+        draw_arrow(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/maxPower) * 0.7);
+        
+        
+        show_debug_message(lineDirection );
     }
 }
 else {
