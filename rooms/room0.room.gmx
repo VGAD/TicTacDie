@@ -12,7 +12,21 @@
   <showcolour>-1</showcolour>
   <code>global.throwable = instance_create(0, 0, Throwable);
 global.hfriction = 1;
-global.vfriction = 1;</code>
+global.vfriction = 1;
+global.gameBoard = instance_create(0, 0, BoardObject);
+
+
+global.grid = ds_grid_create(3,3);
+ds_grid_set_region(global.grid,0,0,2,2,-1);
+
+
+//show_debug_message("WTF" + string(ds_grid_height(grid)));
+for (var row =0; row &lt; ds_grid_height(global.grid); row++) {
+    for (var col =0; col &lt; ds_grid_width(global.grid); col++) {
+        show_debug_message("gobble:" + string(global.gameBoard.x));
+        inst = instance_create(global.gameBoard.x +row, global.gameBoard.y +col, HitBox);
+    }
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -54,8 +68,6 @@ global.vfriction = 1;</code>
   </views>
   <instances>
     <instance objName="Controller" x="0" y="0" name="inst_94166010" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="BoardObject" x="1664" y="160" name="inst_AF109569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="HitBox" x="1772" y="269" name="inst_7D0EF30F" locked="0" code="" scaleX="0.625" scaleY="0.609375" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
