@@ -24,7 +24,13 @@ ds_grid_set_region(global.grid,0,0,2,2,-1);
 for (var row =0; row &lt; ds_grid_height(global.grid); row++) {
     for (var col =0; col &lt; ds_grid_width(global.grid); col++) {
         show_debug_message("gobble:" + string(global.gameBoard.x));
-        inst = instance_create(global.gameBoard.x +row, global.gameBoard.y +col, HitBox);
+        //should be 96
+        inst = instance_create(global.gameBoard.x +row*95, global.gameBoard.y +col*96, HitBox);
+        with (inst)
+        {
+            rowBoard = row;
+            colBoard = col;
+        }
     }
 }</code>
   <enableViews>-1</enableViews>
