@@ -53,6 +53,7 @@
   <instances>
     <instance objName="Controller" x="0" y="0" name="inst_94166010" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="BoardObject" x="1664" y="160" name="inst_AF109569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="HitBox" x="1772" y="269" name="inst_7D0EF30F" locked="0" code="" scaleX="0.625" scaleY="0.609375" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

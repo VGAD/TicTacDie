@@ -9,6 +9,8 @@
     <sprite>sprites\X</sprite>
     <sprite>sprites\board</sprite>
     <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\sprite4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BadBackground</background>
@@ -18,6 +20,7 @@
     <object>objects\Throwable</object>
     <object>objects\Controller</object>
     <object>objects\BoardObject</object>
+    <object>objects\HitBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
