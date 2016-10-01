@@ -14,6 +14,7 @@
 global.hfriction = 1;
 global.vfriction = 1;
 global.gameBoard = instance_create(0, 0, BoardObject);
+global.velocityScale = 0.15;
 
 
 global.grid = ds_grid_create(3,3);
