@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,7 +48,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if (global.changed == true) {
+  global.changed = false;
+}
+else if (global.changed == false &amp;&amp; global.sling == false) {
+  global.throwable = instance_create(0, 0, Throwable);
+  global.sling = true;
+}
+</string>
           </argument>
         </arguments>
       </action>

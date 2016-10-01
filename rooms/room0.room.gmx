@@ -13,6 +13,7 @@
   <code>global.throwable = instance_create(0, 0, Throwable);
 global.hfriction = 1;
 global.vfriction = 1;
+global.changed = false;
 global.gameBoard = instance_create(0, 0, BoardObject);
 
 

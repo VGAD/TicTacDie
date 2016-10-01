@@ -51,13 +51,16 @@ clicked = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (abs(hspeed) &lt; global.hfriction)
+            <string>if (hspeed != 0 || vspeed != 0)
+  global.changed = true;
+
+if (abs(hspeed) &lt; global.hfriction)
   hspeed = 0;
 else if (hspeed &gt; 0)
   hspeed -= global.hfriction;
 else if (hspeed &lt; 0)
   hspeed += global.hfriction;
-  
+
 if (abs(vspeed) &lt; global.vfriction)
   vspeed = 0;
 else if (vspeed &gt; 0)
