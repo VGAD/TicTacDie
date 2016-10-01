@@ -64,7 +64,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>Controller</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -73,7 +73,7 @@
             <string>maxPower = 1000;
 powerBarMaxWidth = 100;
 
-if (global.sling &amp;&amp; mouse_check_button(mb_left)) {
+if (global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; Throwable.clicked==true) {
     if (mouseAlreadyPressed == false) {
         startX = Throwable.sprite_width/2 + Throwable.x;
         startY = Throwable.sprite_height/2 + Throwable.y;
