@@ -45,7 +45,7 @@ if (mouse_check_button(mb_left)) {
         
         draw_line_width_color(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/maxPower), 
             merge_color(c_blue, c_red, lineLength/maxPower), 
-            merge_color(c_red, c_blue, lineLength/maxPower)
+            merge_color(c_blue, c_red, lineLength/maxPower)
         );
         
         // Draw white arrow
