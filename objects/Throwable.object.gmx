@@ -59,6 +59,9 @@ image_yscale = .2;
             <kind>1</kind>
             <string>if (hspeed != 0 || vspeed != 0)
   global.changed = true;
+  
+if (global.throwable == id &amp;&amp; global.sling &amp;&amp; !clicked)
+    y = mouse_y;
 </string>
           </argument>
         </arguments>
@@ -176,6 +179,31 @@ if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
         </arguments>
       </action>
     </event>
+    <event eventtype="9" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.throwable == id &amp;&amp; global.sling){
+ vspeed += 5;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="9" enumb="39">
       <action>
         <libid>1</libid>
@@ -198,6 +226,31 @@ if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
           <argument>
             <kind>0</kind>
             <string>10</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.throwable == id &amp;&amp; global.sling){
+ vspeed -= 5;
+}
+</string>
           </argument>
         </arguments>
       </action>
