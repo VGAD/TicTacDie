@@ -52,7 +52,10 @@
   global.changed = false;
 }
 else if (global.changed == false &amp;&amp; global.sling == false) {
-  global.throwable = instance_create(0, 0, Throwable);
+  if (global.turn == 0)
+    global.throwable = instance_create(0, 0, objX);
+  else
+    global.throwable = instance_create(0, 0, objO);
   global.sling = true;
 }
 </string>
