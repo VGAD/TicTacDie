@@ -7,77 +7,77 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>219</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>234</bbox_bottom>
+  <bbox_left>181</bbox_left>
+  <bbox_right>428</bbox_right>
+  <bbox_top>122</bbox_top>
+  <bbox_bottom>463</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>220</width>
-  <height>235</height>
+  <width>591</width>
+  <height>576</height>
   <frames>
-    <frame index="0">images\sprite5_0.png</frame>
-    <frame index="1">images\sprite5_1.png</frame>
-    <frame index="2">images\sprite5_2.png</frame>
-    <frame index="3">images\sprite5_3.png</frame>
-    <frame index="4">images\sprite5_4.png</frame>
-    <frame index="5">images\sprite5_5.png</frame>
-    <frame index="6">images\sprite5_6.png</frame>
-    <frame index="7">images\sprite5_7.png</frame>
-    <frame index="8">images\sprite5_8.png</frame>
-    <frame index="9">images\sprite5_9.png</frame>
-    <frame index="10">images\sprite5_10.png</frame>
-    <frame index="11">images\sprite5_11.png</frame>
-    <frame index="12">images\sprite5_12.png</frame>
-    <frame index="13">images\sprite5_13.png</frame>
-    <frame index="14">images\sprite5_14.png</frame>
-    <frame index="15">images\sprite5_15.png</frame>
-    <frame index="16">images\sprite5_16.png</frame>
-    <frame index="17">images\sprite5_17.png</frame>
-    <frame index="18">images\sprite5_18.png</frame>
-    <frame index="19">images\sprite5_19.png</frame>
-    <frame index="20">images\sprite5_20.png</frame>
-    <frame index="21">images\sprite5_21.png</frame>
-    <frame index="22">images\sprite5_22.png</frame>
-    <frame index="23">images\sprite5_23.png</frame>
-    <frame index="24">images\sprite5_24.png</frame>
-    <frame index="25">images\sprite5_25.png</frame>
-    <frame index="26">images\sprite5_26.png</frame>
-    <frame index="27">images\sprite5_27.png</frame>
-    <frame index="28">images\sprite5_28.png</frame>
-    <frame index="29">images\sprite5_29.png</frame>
-    <frame index="30">images\sprite5_30.png</frame>
-    <frame index="31">images\sprite5_31.png</frame>
-    <frame index="32">images\sprite5_32.png</frame>
-    <frame index="33">images\sprite5_33.png</frame>
-    <frame index="34">images\sprite5_34.png</frame>
-    <frame index="35">images\sprite5_35.png</frame>
-    <frame index="36">images\sprite5_36.png</frame>
-    <frame index="37">images\sprite5_37.png</frame>
-    <frame index="38">images\sprite5_38.png</frame>
-    <frame index="39">images\sprite5_39.png</frame>
-    <frame index="40">images\sprite5_40.png</frame>
-    <frame index="41">images\sprite5_41.png</frame>
-    <frame index="42">images\sprite5_42.png</frame>
-    <frame index="43">images\sprite5_43.png</frame>
-    <frame index="44">images\sprite5_44.png</frame>
-    <frame index="45">images\sprite5_45.png</frame>
-    <frame index="46">images\sprite5_46.png</frame>
-    <frame index="47">images\sprite5_47.png</frame>
-    <frame index="48">images\sprite5_48.png</frame>
-    <frame index="49">images\sprite5_49.png</frame>
-    <frame index="50">images\sprite5_50.png</frame>
-    <frame index="51">images\sprite5_51.png</frame>
-    <frame index="52">images\sprite5_52.png</frame>
-    <frame index="53">images\sprite5_53.png</frame>
-    <frame index="54">images\sprite5_54.png</frame>
-    <frame index="55">images\sprite5_55.png</frame>
-    <frame index="56">images\sprite5_56.png</frame>
-    <frame index="57">images\sprite5_57.png</frame>
-    <frame index="58">images\sprite5_58.png</frame>
+    <frame index="0">images\Blue_Spirit__0.png</frame>
+    <frame index="1">images\Blue_Spirit__1.png</frame>
+    <frame index="2">images\Blue_Spirit__2.png</frame>
+    <frame index="3">images\Blue_Spirit__3.png</frame>
+    <frame index="4">images\Blue_Spirit__4.png</frame>
+    <frame index="5">images\Blue_Spirit__5.png</frame>
+    <frame index="6">images\Blue_Spirit__6.png</frame>
+    <frame index="7">images\Blue_Spirit__7.png</frame>
+    <frame index="8">images\Blue_Spirit__8.png</frame>
+    <frame index="9">images\Blue_Spirit__9.png</frame>
+    <frame index="10">images\Blue_Spirit__10.png</frame>
+    <frame index="11">images\Blue_Spirit__11.png</frame>
+    <frame index="12">images\Blue_Spirit__12.png</frame>
+    <frame index="13">images\Blue_Spirit__13.png</frame>
+    <frame index="14">images\Blue_Spirit__14.png</frame>
+    <frame index="15">images\Blue_Spirit__15.png</frame>
+    <frame index="16">images\Blue_Spirit__16.png</frame>
+    <frame index="17">images\Blue_Spirit__17.png</frame>
+    <frame index="18">images\Blue_Spirit__18.png</frame>
+    <frame index="19">images\Blue_Spirit__19.png</frame>
+    <frame index="20">images\Blue_Spirit__20.png</frame>
+    <frame index="21">images\Blue_Spirit__21.png</frame>
+    <frame index="22">images\Blue_Spirit__22.png</frame>
+    <frame index="23">images\Blue_Spirit__23.png</frame>
+    <frame index="24">images\Blue_Spirit__24.png</frame>
+    <frame index="25">images\Blue_Spirit__25.png</frame>
+    <frame index="26">images\Blue_Spirit__26.png</frame>
+    <frame index="27">images\Blue_Spirit__27.png</frame>
+    <frame index="28">images\Blue_Spirit__28.png</frame>
+    <frame index="29">images\Blue_Spirit__29.png</frame>
+    <frame index="30">images\Blue_Spirit__30.png</frame>
+    <frame index="31">images\Blue_Spirit__31.png</frame>
+    <frame index="32">images\Blue_Spirit__32.png</frame>
+    <frame index="33">images\Blue_Spirit__33.png</frame>
+    <frame index="34">images\Blue_Spirit__34.png</frame>
+    <frame index="35">images\Blue_Spirit__35.png</frame>
+    <frame index="36">images\Blue_Spirit__36.png</frame>
+    <frame index="37">images\Blue_Spirit__37.png</frame>
+    <frame index="38">images\Blue_Spirit__38.png</frame>
+    <frame index="39">images\Blue_Spirit__39.png</frame>
+    <frame index="40">images\Blue_Spirit__40.png</frame>
+    <frame index="41">images\Blue_Spirit__41.png</frame>
+    <frame index="42">images\Blue_Spirit__42.png</frame>
+    <frame index="43">images\Blue_Spirit__43.png</frame>
+    <frame index="44">images\Blue_Spirit__44.png</frame>
+    <frame index="45">images\Blue_Spirit__45.png</frame>
+    <frame index="46">images\Blue_Spirit__46.png</frame>
+    <frame index="47">images\Blue_Spirit__47.png</frame>
+    <frame index="48">images\Blue_Spirit__48.png</frame>
+    <frame index="49">images\Blue_Spirit__49.png</frame>
+    <frame index="50">images\Blue_Spirit__50.png</frame>
+    <frame index="51">images\Blue_Spirit__51.png</frame>
+    <frame index="52">images\Blue_Spirit__52.png</frame>
+    <frame index="53">images\Blue_Spirit__53.png</frame>
+    <frame index="54">images\Blue_Spirit__54.png</frame>
+    <frame index="55">images\Blue_Spirit__55.png</frame>
+    <frame index="56">images\Blue_Spirit__56.png</frame>
+    <frame index="57">images\Blue_Spirit__57.png</frame>
+    <frame index="58">images\Blue_Spirit__58.png</frame>
   </frames>
 </sprite>
