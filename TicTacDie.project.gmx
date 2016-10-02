@@ -12,6 +12,7 @@
     <sprite>sprites\sprite3</sprite>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\Blue_Spirit_</sprite>
+    <sprite>sprites\red_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BadBackground</background>
