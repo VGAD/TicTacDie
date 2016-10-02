@@ -30,6 +30,8 @@ y = (background_height[0] / 2);
 mass = 1;
 clicked = false;
 friction = 1;
+image_xscale = .2;
+image_yscale = .2;
 </string>
           </argument>
         </arguments>
@@ -237,7 +239,7 @@ friction = 1;
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>-1</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>112,160</point>
+    <point>288,336</point>
     <point>64,16</point>
   </PhysicsShapePoints>
 </object>
