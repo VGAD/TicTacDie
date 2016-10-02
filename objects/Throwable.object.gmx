@@ -59,6 +59,9 @@ image_yscale = .2;
             <kind>1</kind>
             <string>if (hspeed != 0 || vspeed != 0)
   global.changed = true;
+  
+if (global.throwable == id &amp;&amp; global.sling &amp;&amp; !clicked)
+    y = mouse_y;
 </string>
           </argument>
         </arguments>
