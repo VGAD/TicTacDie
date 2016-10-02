@@ -60,8 +60,10 @@ image_yscale = .2;
             <string>if (hspeed != 0 || vspeed != 0)
   global.changed = true;
   
-if (global.throwable == id &amp;&amp; global.sling &amp;&amp; !clicked)
+// Only follow vertical mouse pos if not in solid object
+if (global.throwable == id &amp;&amp; global.sling &amp;&amp; !clicked &amp;&amp; place_free(x, mouse_y)){
     y = mouse_y;
+}
 </string>
           </argument>
         </arguments>
