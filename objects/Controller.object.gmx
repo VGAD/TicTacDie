@@ -26,6 +26,68 @@
           <argument>
             <kind>1</kind>
             <string>global.sling = true;
+boardCheck = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// If board has changed set that the winner board needs to be rechecked
+if (global.changed &amp;&amp; ! boardChecked) {
+  show_debug_message("Setting check!");
+  boardCheck = true;
+}
+
+// If the board is no longer changing and we need to recheck the board
+if (!global.changed &amp;&amp; boardCheck) {
+  // Reset the grids, would be important if we have physics
+  ds_grid_set_region(global.teamXGrid,0,0,2,2,0);
+  ds_grid_set_region(global.teamOGrid,0,0,2,2,0);
+  
+  with(objX) {
+    var boxInst = instance_place(x, y, HitBox);
+    if (boxInst != noone) {
+      global.teamXGrid[# boxInst.rowBoard, boxInst.colBoard] = 1;
+    }
+  }
+  
+  with(objO) {
+    var boxInst = instance_place(x, y, HitBox);
+    if (boxInst != noone) {
+      global.teamOGrid[# boxInst.rowBoard, boxInst.colBoard] = 1;
+    }
+  }
+
+  show_debug_message("----X-----");  
+  for(var i = 0; i &lt; 3; i++) {
+    show_debug_message(string(global.teamXGrid[# i, 0]) + " " + string(global.teamXGrid[# i, 1]) + " " + string(global.teamXGrid[# i, 2]));
+  }
+  show_debug_message("----O-----");
+  for(var i = 0; i &lt; 3; i++) {
+    show_debug_message(string(global.teamOGrid[# i, 0]) + " " + string(global.teamOGrid[# i, 1]) + " " + string(global.teamOGrid[# i, 2]));
+  }
+  show_debug_message("---------");
+  
+  
+  boardCheck = false;
+}
 </string>
           </argument>
         </arguments>
