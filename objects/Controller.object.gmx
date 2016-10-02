@@ -64,24 +64,26 @@ if (!global.changed &amp;&amp; boardCheck) {
   with(objX) {
     var boxInst = instance_place(x, y, HitBox);
     if (boxInst != noone) {
-      global.teamXGrid[# boxInst.rowBoard, boxInst.colBoard] = 1;
+      show_debug_message("X: " + string(id) + " collides with " + string(boxInst.id));
+      global.teamXGrid[# boxInst.colBoard, boxInst.rowBoard] = 1;
     }
   }
   
   with(objO) {
     var boxInst = instance_place(x, y, HitBox);
     if (boxInst != noone) {
-      global.teamOGrid[# boxInst.rowBoard, boxInst.colBoard] = 1;
+      show_debug_message("Y: " + string(id) + " collides with " + string(boxInst.id));
+      global.teamOGrid[# boxInst.colBoard, boxInst.rowBoard] = 1;
     }
   }
 
   show_debug_message("----X-----");  
   for(var i = 0; i &lt; 3; i++) {
-    show_debug_message(string(global.teamXGrid[# i, 0]) + " " + string(global.teamXGrid[# i, 1]) + " " + string(global.teamXGrid[# i, 2]));
+    show_debug_message(string(global.teamXGrid[# 0, i]) + " " + string(global.teamXGrid[# 1, i]) + " " + string(global.teamXGrid[# 2, i]));
   }
   show_debug_message("----O-----");
   for(var i = 0; i &lt; 3; i++) {
-    show_debug_message(string(global.teamOGrid[# i, 0]) + " " + string(global.teamOGrid[# i, 1]) + " " + string(global.teamOGrid[# i, 2]));
+    show_debug_message(string(global.teamOGrid[# 0, i]) + " " + string(global.teamOGrid[# 1, i]) + " " + string(global.teamOGrid[# 2, i]));
   }
   show_debug_message("---------");
   
