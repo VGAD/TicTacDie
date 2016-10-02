@@ -50,7 +50,7 @@ boardCheck = false;
           <argument>
             <kind>1</kind>
             <string>// If board has changed set that the winner board needs to be rechecked
-if (global.changed &amp;&amp; ! boardChecked) {
+if (global.changed &amp;&amp; !boardCheck) {
   show_debug_message("Setting check!");
   boardCheck = true;
 }
