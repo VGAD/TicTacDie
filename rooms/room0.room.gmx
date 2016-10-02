@@ -28,7 +28,7 @@ ds_grid_set_region(global.teamOGrid,0,0,2,2,1);
 
 for (var row = 0; row &lt; 3; row++) {
     for (var col = 0; col &lt; 3; col++) {
-        inst = instance_create(global.gameBoard.x + col * 96, global.gameBoard.y + row * 96, HitBox);
+        inst = instance_create(global.gameBoard.x + col * 81, global.gameBoard.y + row * 75, HitBox);
         with (inst)
         {
             rowBoard = row;
