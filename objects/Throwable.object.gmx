@@ -248,7 +248,14 @@ if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>000010000</string>
+            <string>x = 100;
+y = (background_height[0] / 2);
+image_xscale = 0.5;
+image_yscale = 0.5;
+mass = 1;
+clicked = false;
+friction = 1;
+</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -270,7 +277,7 @@ if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>-1</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>288,336</point>
-    <point>64,16</point>
+    <point>304,336</point>
+    <point>64,296</point>
   </PhysicsShapePoints>
 </object>
