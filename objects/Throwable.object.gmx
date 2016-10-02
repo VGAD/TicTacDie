@@ -115,15 +115,31 @@ if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
             <string>if(global.sling==true &amp;&amp; clicked == true){
     clicked = false;
     global.sling = false;
-    var dist, angle;
+    var lineLength, velocity, angle;
+    
+    // Init vars
+    lineLength = point_distance(x, y, mouse_x, mouse_y);
+    angle = degtorad(point_direction(x, y, mouse_x, mouse_y));
+    velocity = global.minVelocity;
+    
+    // Find final velocity
+    if (lineLength &gt;= global.lineLengthMaxVelocity) {
+      velocity += global.rangeVelocity;
+    }
+    else {
+      var linePercent = lineLength / global.lineLengthMaxVelocity;
+      velocity += linePercent * global.rangeVelocity;
+    }
+    show_debug_message("Velocity: " + string(velocity));
+    
+    // Seperate into components
+    var xComp = cos(angle) * velocity;
+    var yComp = sin(angle) * velocity;
     
     // Set speeds
-    dist = point_distance(x, y, mouse_x, mouse_y);
-    angle = degtorad(point_direction(x, y, mouse_x, mouse_y));
-    var xSpeed = cos(angle) * dist * global.velocityScale;
-    var ySpeed = sin(angle) * dist * global.velocityScale;
-    hspeed = cos(angle) * dist * global.velocityScale;
-    vspeed = -1 * sin(angle) * dist * global.velocityScale;
+    hspeed = xComp;
+    vspeed = -1 * yComp;
+    show_debug_message("Release speed: " + string(hspeed) + " " + string(vspeed));
 }
 </string>
           </argument>

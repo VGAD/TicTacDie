@@ -77,8 +77,7 @@ else if (global.changed == false &amp;&amp; global.sling == false) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>maxPower = 1000;
-powerBarMaxWidth = 100;
+            <string>var powerBarMaxWidth = 100;
 
 if ( global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; global.throwable.clicked==true) {
     if (mouseAlreadyPressed == false) {
@@ -87,23 +86,22 @@ if ( global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; global.throw
         mouseAlreadyPressed = true;
     }
     else if (mouseAlreadyPressed == true) {
-        lineLength = point_distance(mouse_x, mouse_y, startX, startY,);
-        lineDirection = point_direction(mouse_x, mouse_y, startX, startY,);
+        lineLength = point_distance(mouse_x, mouse_y, startX, startY);
         
-        if (lineLength &gt; maxPower){
-            lineLength = maxPower;
+        if (lineLength &gt; global.lineLengthMaxVelocity){
+            lineLength = global.lineLengthMaxVelocity;
         }
        
         draw_set_alpha(0.5);
         
-        draw_line_width_color(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/maxPower), 
-            merge_color(c_blue, c_red, lineLength/maxPower), 
-            merge_color(c_blue, c_red, lineLength/maxPower)
+        draw_line_width_color(mouse_x, mouse_y, startX, startY, powerBarMaxWidth * (lineLength/global.lineLengthMaxVelocity), 
+            merge_color(c_blue, c_red, lineLength/global.lineLengthMaxVelocity), 
+            merge_color(c_blue, c_red, lineLength/global.lineLengthMaxVelocity)
         );
         
         // Draw white arrow
         draw_set_color(c_white);
-        draw_arrow( startX, startY, mouse_x, mouse_y, powerBarMaxWidth * (lineLength/maxPower) * 0.7);
+        draw_arrow( startX, startY, mouse_x, mouse_y, powerBarMaxWidth * (lineLength/global.lineLengthMaxVelocity) * 0.7);
         
         draw_set_alpha(1);
     }
