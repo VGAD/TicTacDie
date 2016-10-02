@@ -15,7 +15,9 @@ global.hfriction = 1;
 global.vfriction = 1;
 global.changed = false;
 global.gameBoard = instance_create(0, 0, BoardObject);
-global.velocityScale = 0.15;
+global.minVelocity = 30;
+global.rangeVelocity = 35;
+global.lineLengthMaxVelocity = 650; // The length of the line for a max power shot
 
 
 global.grid = ds_grid_create(3,3);
