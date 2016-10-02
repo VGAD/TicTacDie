@@ -82,8 +82,8 @@ powerBarMaxWidth = 100;
 
 if ( global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; global.throwable.clicked==true) {
     if (mouseAlreadyPressed == false) {
-        startX = global.throwable.sprite_width/2 + global.throwable.x;
-        startY = global.throwable.sprite_height/2 + global.throwable.y;
+        startX = global.throwable.x;
+        startY = global.throwable.y;
         mouseAlreadyPressed = true;
     }
     else if (mouseAlreadyPressed == true) {
