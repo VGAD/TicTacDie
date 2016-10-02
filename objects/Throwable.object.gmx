@@ -271,14 +271,7 @@ if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = 100;
-y = (background_height[0] / 2);
-image_xscale = 0.5;
-image_yscale = 0.5;
-mass = 1;
-clicked = false;
-friction = 1;
-</string>
+            <string>000010000</string>
           </argument>
           <argument>
             <kind>0</kind>
