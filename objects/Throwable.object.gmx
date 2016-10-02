@@ -81,9 +81,12 @@ image_yscale = .2;
           <argument>
             <kind>1</kind>
             <string>// Change direction when hitting a wall
-vspeed = -1 * vspeed;
 
+if(hspeed &gt;= 0){
+    vspeed = -1 * vspeed;
+}
 if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
+
     hspeed = -1 * hspeed; 
 }
 
