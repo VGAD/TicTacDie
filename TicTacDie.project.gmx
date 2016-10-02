@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\bounce1</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\X</sprite>
     <sprite>sprites\board</sprite>
@@ -13,6 +15,7 @@
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\Blue_Spirit_</sprite>
     <sprite>sprites\red_sprite</sprite>
+    <sprite>sprites\wall1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BadBackground</background>
@@ -24,6 +27,7 @@
     <object>objects\Controller</object>
     <object>objects\BoardObject</object>
     <object>objects\HitBox</object>
+    <object>objects\Wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>x = 100;
 y = (background_height[0] / 2);
+image_xscale = 0.5;
+image_yscale = 0.5;
 mass = 1;
 clicked = false;
 friction = 1;
@@ -54,6 +56,35 @@ friction = 1;
             <kind>1</kind>
             <string>if (hspeed != 0 || vspeed != 0)
   global.changed = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Change direction when hitting a wall
+vspeed = -1 * vspeed;
+
+if(hspeed &lt; 0){ // don't reverse horizontal if not going backwards
+    hspeed = -1 * hspeed; 
+}
+
 </string>
           </argument>
         </arguments>
