@@ -106,8 +106,6 @@ if ( global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; global.throw
         draw_arrow( startX, startY, mouse_x, mouse_y, powerBarMaxWidth * (lineLength/maxPower) * 0.7);
         
         draw_set_alpha(1);
-        
-        show_debug_message(lineDirection );
     }
 }
 else {

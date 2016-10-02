@@ -21,13 +21,9 @@ global.velocityScale = 0.15;
 global.grid = ds_grid_create(3,3);
 ds_grid_set_region(global.grid,0,0,2,2,-1);
 
-
-//show_debug_message("WTF" + string(ds_grid_height(grid)));
 for (var row =0; row &lt; ds_grid_height(global.grid); row++) {
     for (var col =0; col &lt; ds_grid_width(global.grid); col++) {
-        show_debug_message("gobble:" + string(global.gameBoard.x));
-        //should be 96
-        inst = instance_create(global.gameBoard.x +row*95, global.gameBoard.y +col*96, HitBox);
+        inst = instance_create(global.gameBoard.x +row*96, global.gameBoard.y +col*96, HitBox);
         with (inst)
         {
             rowBoard = row;

@@ -26,8 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>if place_meeting(x, y, Throwable){
-    
-    
     global.grid[#colBoard,rowBoard] = 1;
 }
 </string>
