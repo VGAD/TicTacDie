@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>16777215</colour>
   <showcolour>-1</showcolour>
-  <code>global.throwable = instance_create(0, 0, Throwable);
+  <code>global.throwable = instance_create(0, 0, objX);
+global.turn = 0;
 global.hfriction = 1;
 global.vfriction = 1;
 global.changed = false;
