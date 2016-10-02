@@ -80,10 +80,10 @@ else if (global.changed == false &amp;&amp; global.sling == false) {
             <string>maxPower = 1000;
 powerBarMaxWidth = 100;
 
-if (global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; Throwable.clicked==true) {
+if ( global.sling &amp;&amp; mouse_check_button(mb_left) &amp;&amp; global.throwable.clicked==true) {
     if (mouseAlreadyPressed == false) {
-        startX = Throwable.sprite_width/2 + Throwable.x;
-        startY = Throwable.sprite_height/2 + Throwable.y;
+        startX = global.throwable.sprite_width/2 + global.throwable.x;
+        startY = global.throwable.sprite_height/2 + global.throwable.y;
         mouseAlreadyPressed = true;
     }
     else if (mouseAlreadyPressed == true) {

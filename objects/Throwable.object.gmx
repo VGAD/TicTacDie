@@ -89,7 +89,7 @@ else if (vspeed &lt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.sling=true &amp;&amp; clicked = true){
+            <string>if(global.sling==true &amp;&amp; clicked == true){
     clicked = false;
     global.sling = false;
     hspeed= ((mouse_x - x)* global.velocityScale)/mass
@@ -117,7 +117,7 @@ else if (vspeed &lt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.sling = true &amp;&amp; clicked = true){
+            <string>if(global.sling == true &amp;&amp; clicked == true){
     //x=mouse_x;
     //y=mouse_y;
 }
@@ -143,7 +143,12 @@ else if (vspeed &lt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>clicked=true;
+            <string>if (global.throwable == id){
+    clicked=true;
+}
+else{
+    show_debug_message("Nope");
+}
 
 </string>
           </argument>
@@ -265,7 +270,7 @@ else if (vspeed &lt; 0)
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
-  <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
+  <PhysicsObjectKinematic>-1</PhysicsObjectKinematic>
   <PhysicsShapePoints>
     <point>16,16</point>
     <point>16,16</point>
