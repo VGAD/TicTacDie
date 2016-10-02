@@ -29,6 +29,7 @@
 y = (background_height[0] / 2);
 mass = 1;
 clicked = false;
+friction = 1;
 </string>
           </argument>
         </arguments>
@@ -53,20 +54,6 @@ clicked = false;
             <kind>1</kind>
             <string>if (hspeed != 0 || vspeed != 0)
   global.changed = true;
-
-if (abs(hspeed) &lt; global.hfriction)
-  hspeed = 0;
-else if (hspeed &gt; 0)
-  hspeed -= global.hfriction;
-else if (hspeed &lt; 0)
-  hspeed += global.hfriction;
-
-if (abs(vspeed) &lt; global.vfriction)
-  vspeed = 0;
-else if (vspeed &gt; 0)
-  vspeed -= global.vfriction;
-else if (vspeed &lt; 0)
-  vspeed += global.vfriction;
 </string>
           </argument>
         </arguments>
@@ -92,8 +79,15 @@ else if (vspeed &lt; 0)
             <string>if(global.sling==true &amp;&amp; clicked == true){
     clicked = false;
     global.sling = false;
-    hspeed= ((mouse_x - x)* global.velocityScale)/mass
-    vspeed= ((mouse_y - y)* global.velocityScale)/mass
+    var dist, angle;
+    
+    // Set speeds
+    dist = point_distance(x, y, mouse_x, mouse_y);
+    angle = degtorad(point_direction(x, y, mouse_x, mouse_y));
+    var xSpeed = cos(angle) * dist * global.velocityScale;
+    var ySpeed = sin(angle) * dist * global.velocityScale;
+    hspeed = cos(angle) * dist * global.velocityScale;
+    vspeed = -1 * sin(angle) * dist * global.velocityScale;
 }
 </string>
           </argument>
@@ -243,7 +237,7 @@ else if (vspeed &lt; 0)
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>-1</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>16,16</point>
-    <point>16,16</point>
+    <point>112,160</point>
+    <point>64,16</point>
   </PhysicsShapePoints>
 </object>
