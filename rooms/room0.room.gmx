@@ -127,7 +127,8 @@ for (var row = 0; row &lt; 3; row++) {
     <instance objName="Wall" x="0" y="480" name="inst_A34B4D20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="Wall" x="2016" y="544" name="inst_5FED179B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1984" y="32" name="inst_73E8F4D0" locked="0" code="" scaleX="1" scaleY="1" colour="33554431" rotation="0"/>
-    <instance objName="Wall" x="0" y="576" name="inst_0B3E0463" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="ReaperBlock" x="1984" y="0" name="inst_4E0E87E9" locked="0" code="" scaleX="0.25" scaleY="2.25" colour="4294967295" rotation="1"/>
+    <instance objName="Wall" x="0" y="544" name="inst_B3E5C224" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

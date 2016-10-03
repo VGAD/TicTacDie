@@ -31,6 +31,7 @@
     <object>objects\Wall</object>
     <object>objects\objX</object>
     <object>objects\objO</object>
+    <object>objects\ReaperBlock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
