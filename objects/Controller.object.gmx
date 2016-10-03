@@ -87,6 +87,14 @@ if (!global.changed &amp;&amp; boardCheck) {
   }
   show_debug_message("---------");
   
+  if (checkWin(global.teamXGrid)) {
+    show_message("X wins!");
+    game_end();
+  }
+  if (checkWin(global.teamOGrid)) {
+    show_message("O wins!");
+    game_end();
+  }  
   
   boardCheck = false;
 }
