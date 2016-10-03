@@ -23,6 +23,9 @@
     <background>background\rock_background</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\checkWin.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\Throwable</object>
     <object>objects\Controller</object>
